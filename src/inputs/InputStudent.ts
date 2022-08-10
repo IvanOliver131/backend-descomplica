@@ -3,12 +3,12 @@ import { Student } from "../models/Student";
 
 @InputType({ description: "New student data" })
 export class AddStudentInput implements Partial<Student> {
-  @Field()
+  @Field(() => String)
   name: string;
 
-  @Field()
+  @Field(() => String)
   cpf: string;
 
-  @Field()
+  @Field(() => String)
   email: string;
 }

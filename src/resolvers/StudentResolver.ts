@@ -1,5 +1,4 @@
-import { Context } from "apollo-server-core";
-import { Arg, Ctx, Mutation, Query, Resolver } from "type-graphql";
+import { Arg, Mutation, Query, Resolver } from "type-graphql";
 import { AddStudentInput } from "../inputs/InputStudent";
 import { Student } from "../models/Student";
 
@@ -11,10 +10,9 @@ export class StudentResolver {
   }
 
   @Mutation(() => Student)
-  async createStudent(
-    @Arg('data') data: AddStudentInput) {
-    const student = Student.create(data);
-    await student.save();
+  async createStudent(@Arg('data') data: AddStudentInput): Promise<Student> {
+    const student = Student.create<Student>(data);
+    await Student.save(student);
     return student;
   }
 
@@ -31,7 +29,7 @@ export class StudentResolver {
   @Mutation(() => Student)
   async updateStudent(
     @Arg('id') id: string,
-    @Arg('data') data: AddStudentInput, @Ctx() ctx: Context): Promise<Student> {
+    @Arg('data') data: AddStudentInput): Promise<Student> {
     const student = await Student.findOne({ where: { id } });
     if (!student) throw new Error("Student not found!");
     Object.assign(student, data);
