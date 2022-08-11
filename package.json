@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn --transpile-only src/index.ts",
-    "start": "node build/index.js",
+    "start": "ts-node-esm src/index.ts",
     "postinstall": "tsc",
     "typeorm": "ts-node-dev  node_modules/typeorm/cli.js",
     "docker:up": "docker-compose up",
