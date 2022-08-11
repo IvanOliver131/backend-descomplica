@@ -16,7 +16,7 @@
 
 <hr>
 
-Primeiro de tudo devemos instalar todas as dependências utilizando
+##1. Primeiro de tudo devemos instalar todas as dependências utilizando
 
 ```
 yarn
@@ -28,7 +28,7 @@ ou
 npm
 ```
 
-Após instalar as depências devemos rodar o seguinte comando, que irá ser responsável por subir um container que terá o banco de dados que iremos utilizar
+##2. Após instalar as depências devemos rodar o seguinte comando, que irá ser responsável por subir um container que terá o banco de dados que iremos utilizar
 
 ```
 yarn docker:up
@@ -40,7 +40,7 @@ ou
 npm run docker:up
 ```
 
-Agora que temos o nosso banco, podemos rodar o comando que será responsável por criar as migrations(tabelas) do nosso banco
+##3. Agora que temos o nosso banco, podemos rodar o comando que será responsável por criar as migrations(tabelas) do nosso banco
 
 ```
 yarn migrations:create
@@ -52,7 +52,7 @@ ou
 npm run migrations:create
 ```
 
-Com tudo pronto podemos finalmente rodar a nossa aplicação sem problemas, basta utilizar o código abaixo
+##4. Com tudo pronto podemos finalmente rodar a nossa aplicação sem problemas, basta utilizar o código abaixo
 
 ```
 yarn dev
@@ -65,3 +65,18 @@ npm run dev
 ```
 
 ![image](https://user-images.githubusercontent.com/62350674/184053305-51d8e98b-a806-450c-a1fb-1b12d6346ca7.png)
+
+###Como rodar os testes? 🧪⚙
+
+##1. Para rodar os testes basta utilizar o seguinte comando
+
+```
+yarn test
+```
+
+ou
+
+```
+npm run test
+```
+
