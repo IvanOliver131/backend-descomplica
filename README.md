@@ -13,6 +13,8 @@
 
 ## Como rodar a aplicação 🚀🔥
 
+### 0. Configure o arquivo .env com as credenciais que você ira utilizar ⚙
+
 ### 1. Primeiro de tudo devemos instalar todas as dependências utilizando
 
 ```
@@ -76,4 +78,3 @@ ou
 ```
 npm run test
 ```
-
