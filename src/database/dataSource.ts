@@ -3,7 +3,7 @@ require("dotenv").config();
 
 export const PostgresDataSource = () => {
   if (process.env.NODE_ENV === 'development') {
-    return new DataSource({
+    new DataSource({
       type: "postgres",
       host: process.env.TYPEORM_HOST,
       port: 5432,
@@ -15,7 +15,7 @@ export const PostgresDataSource = () => {
       entities: ["src/models/*.ts"],
     })
   } else if (process.env.NODE_ENV === 'test') {
-    return new DataSource({
+    new DataSource({
       type: "postgres",
       host: process.env.TYPEORM_HOST,
       port: 5432,
@@ -27,7 +27,7 @@ export const PostgresDataSource = () => {
       entities: ["src/models/*.ts"],
     })
   } else {
-    return new DataSource({
+    new DataSource({
       type: "postgres",
       host: process.env.TYPEORM_HOST,
       port: 5432,
