@@ -1,12 +1,9 @@
 import "reflect-metadata";
-
+import 'dotenv/config';
 import path from 'path';
-
 import { ApolloServer } from 'apollo-server';
 import { buildSchema } from 'type-graphql'
 import { StudentResolver } from "./resolvers/StudentResolver";
-
-import 'dotenv/config';
 import { PostgresDataSource } from "./database/dataSource";
 
 async function main() {
