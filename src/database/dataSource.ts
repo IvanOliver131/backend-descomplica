@@ -1,7 +1,7 @@
 import { DataSource } from "typeorm"
 require("dotenv").config();
 
-export const PostgresDataSource = () => {
+export const PostgresDataSource = (): DataSource => {
   let connection;
   if (process.env.NODE_ENV == 'development') {
     connection = new DataSource({
