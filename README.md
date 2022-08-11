@@ -24,7 +24,7 @@ yarn
 ou
 
 ```
-npm
+npm i
 ```
 
 ### 2. Após instalar as depências devemos rodar o seguinte comando, que irá ser responsável por subir um container que terá o banco de dados que iremos utilizar
@@ -36,7 +36,7 @@ yarn docker:up
 ou
 
 ```
-npm run docker:up
+npm docker:up
 ```
 
 ### 3. Agora que temos o nosso banco, podemos rodar o comando que será responsável por criar as migrations(tabelas) do nosso banco
@@ -48,7 +48,7 @@ yarn migrations:create
 ou
 
 ```
-npm run migrations:create
+npm migrations:create
 ```
 
 ### 4. Com tudo pronto podemos finalmente rodar a nossa aplicação sem problemas, basta utilizar o código abaixo
@@ -60,12 +60,20 @@ yarn dev
 ou
 
 ```
-npm run dev
+npm dev
 ```
 
 ![image](https://user-images.githubusercontent.com/62350674/184053305-51d8e98b-a806-450c-a1fb-1b12d6346ca7.png)
 
-## Como rodar os testes 🧪⚙
+## Como realizar o deploy da aplicação 🎉🚀
+
+Para realização do deploy basta seguir a documentação abaixo
+
+```
+https://www.apollographql.com/docs/apollo-server/deployment/heroku/
+```
+
+## !Desenvolvimento! Como rodar os testes 🧪⚙
 
 ### 1. Para rodar os testes basta utilizar o seguinte comando
 
@@ -76,5 +84,5 @@ yarn test
 ou
 
 ```
-npm run test
+npm test
 ```
