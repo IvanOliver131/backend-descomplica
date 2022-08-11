@@ -24,7 +24,9 @@ async function main() {
     schema
   });
 
-  const { url } = await server.listen()
+  const { url } = await server.listen({
+    port: process.env.PORT,
+  })
   console.log(`Server running on ${url} 🔥🚀`)
 }
 
