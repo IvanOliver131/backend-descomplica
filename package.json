@@ -9,7 +9,7 @@
     "typeorm": "ts-node-dev  node_modules/typeorm/cli.js",
     "docker:up": "docker-compose up",
     "docker:down": "docker-compose down",
-    "run:migrations": "yarn typeorm -- migration:run -d src/database/dataSource.ts"
+    "migrations:create": "yarn typeorm -- migration:run -d src/database/dataSource.ts"
   },
   "dependencies": {
     "@types/express": "^4.17.13",

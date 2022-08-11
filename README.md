@@ -1,6 +1,7 @@
 # backend-descomplica
 
 ### Ferramentas utilizadas ✨⚙🛠
+
 <hr>
 <div style="display: inline_block"><br>
   <img align="center" alt="Ivan-Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
@@ -12,45 +13,55 @@
 </div>
 
 ### Como rodar a aplicação 🚀🔥
+
 <hr>
 
 Primeiro de tudo devemos instalar todas as dependências utilizando
+
 ```
-yarn 
+yarn
 ```
+
 ou
+
 ```
 npm
 ```
 
 Após instalar as depências devemos rodar o seguinte comando, que irá ser responsável por subir um container que terá o banco de dados que iremos utilizar
+
 ```
 yarn docker:up
 ```
-ou 
+
+ou
+
 ```
 npm run docker:up
 ```
 
 Agora que temos o nosso banco, podemos rodar o comando que será responsável por criar as migrations(tabelas) do nosso banco
+
 ```
 yarn migrations:create
 ```
-ou 
+
+ou
+
 ```
 npm run migrations:create
 ```
 
 Com tudo pronto podemos finalmente rodar a nossa aplicação sem problemas, basta utilizar o código abaixo
+
 ```
 yarn dev
 ```
-ou 
+
+ou
+
 ```
 npm run dev
 ```
 
 ![image](https://user-images.githubusercontent.com/62350674/184053305-51d8e98b-a806-450c-a1fb-1b12d6346ca7.png)
-
-
-
