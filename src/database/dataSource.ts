@@ -40,8 +40,8 @@ if (process.env.NODE_ENV == 'development') {
         rejectUnauthorized: false,
       },
     },
-    migrations: ['build/src/database/migrations/*.js'],
-    entities: ['build/src/models/*.js'],
+    migrations: ['/src/database/migrations/*.js'],
+    entities: ['/src/models/*.js'],
   })
 }
 
