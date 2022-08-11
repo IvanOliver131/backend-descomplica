@@ -3,7 +3,7 @@ require("dotenv").config();
 
 export const PostgresDataSource = new DataSource({
   type: "postgres",
-  host: process.env.TYPEORM_HOST,
+  host: process.env.BD_HOST_PROD,
   port: 5432,
   username: process.env.BD_USERNAME_PROD,
   password: process.env.BD_PASSWORD_PROD,
@@ -44,7 +44,7 @@ export const PostgresDataSource = new DataSource({
   // } else {
   //   new DataSource({
   //     type: "postgres",
-  //     host: process.env.TYPEORM_HOST,
+  //     host: process.env.BD_HOST_PROD,
   //     port: 5432,
   //     username: process.env.BD_USERNAME_PROD,
   //     password: process.env.BD_PASSWORD_PROD,
@@ -59,5 +59,5 @@ export const PostgresDataSource = new DataSource({
   //     entities: ['build/src/models/*.js'],
   //   })
   // }
-}
+// }
 
