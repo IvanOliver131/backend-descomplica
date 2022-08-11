@@ -63,7 +63,7 @@ npm run dev
 
 ![image](https://user-images.githubusercontent.com/62350674/184053305-51d8e98b-a806-450c-a1fb-1b12d6346ca7.png)
 
-## Como rodar os testes? 🧪⚙
+## Como rodar os testes 🧪⚙
 
 ### 1. Para rodar os testes basta utilizar o seguinte comando
 
